@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav {
     position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 9999;
     width: 100%;
-    height: 80px;
-    background-color: crimson;
-    top: 0;
+    height: 80px; 
+    background-color: rebeccapurple;  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,6 +37,7 @@
     text-decoration: none;
     font-size: 20px;
     transition: all .1s;
+    font-weight: bold;
 }
 .nav ul li a:hover {
     border-bottom: 2px solid #fff;
@@ -39,7 +46,9 @@
 .banner {
     width: 90%;
     height: 700px;
-    background-color: crimson;
+    
+    top: 80px;
+    background-color: rebeccapurple;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -57,7 +66,7 @@
     letter-spacing: 3px;
 }
 .btn {
-    background-color: crimson;
+    background-color: rebeccapurple;
     padding: 15px 30px;
     margin-top: 35px;
     text-decoration: none;
@@ -69,5 +78,83 @@
 }
 .btn:hover {
     background-color: #fff;
-    color: crimson;
+    color: rebeccapurple;
 }
+
+#projects {
+    text-align: center;
+}
+
+.parent {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.child {
+    width: 400px;
+    height: 400px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .3s;
+}
+.child a:hover {
+    background-color: #fff;
+    color: rebeccapurple;
+}
+
+.description {
+    color: #fff;
+    margin-top: 25px;
+
+}
+
+
+/* Projects */
+/* 1. */
+
+.projects {
+    width: 90%;
+    height: auto;
+    margin: 500px auto;
+    border: 3px solid yellow;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+table {
+    width: 650px;
+    margin: 20px auto;
+    border: 2px solid darkorchid;
+}
+
+thead {
+    background-color: plum;
+}
+
+td {
+    border-top: 1px solid darkorchid;
+}
+
+.code {
+    font-family: monospace;
+    background-color: beige;
+}
+
+/* End 1. */
