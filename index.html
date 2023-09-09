@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <meta name="viewport" content="width=device-width, initial-scale:1">
         <link href="index.css" rel="stylesheet">
         <title>First Project</title>
     </head>
@@ -11,16 +11,73 @@
             <a href="#" class="logo">EMAS</a>
             <ul>
                 <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+
         <div class="banner">
             <h1>Hello, Universe</h1>
             <h2>I'm Emas</h2>
-            <a class="btn" href="#">My projects</a>
+            <a class="btn" href="#projects">My projects</a>
         </div>
 
+
+        <h2 id="projects">My projects</h2>
+        <div class="parent">
+            <div class="child">
+                <a href="#one"">One</a>
+                <p class="description">Codecademy Pro Front-End Engineer</p>
+            </div>
+            <div class="child">
+                <a href="#">Two</a>
+                <p class="description">Codecademy Pro Front-End Engineer</p>
+            </div>
+            <div class="child">
+                <a href="#">Three</a>
+                <p class="description">Codecademy Pro Front-End Engineer</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="projects" id="one">
+            <h1>1. Types of selectors</h1>
+            <table>
+                <thead>
+                    <th>Selector</th>
+                    <th>Name</th>
+                    <th>Description</tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><span class="code"></span>&lt;p&gt;</td>
+                        <td>Type</td>
+                        <td>This group includes selectors that target an HTML element such as a &lt;p&gt;.</td>
+                    </tr>
+
+                    <tr>
+                        <td> <span class="code"></span>.box</td>
+                        <td>Class</td>
+                        <td>It also includes selectors which target a class.</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="code"></span>#unique</td>
+                        <td>ID</td>
+                        <td>It also includes selectors which target an ID.</td>
+                    </tr>
+
+                    <tr>
+                        <td><span class="code"></span>a[title]</td>
+                        <td>Attribute</td>
+                        <td>This group of selectors gives you different ways to select elements based on the presence of a certain attribute on an element:</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
 
